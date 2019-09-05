@@ -4,13 +4,14 @@ import android.os.Bundle;
 
 import com.badlogic.gdx.backends.android.AndroidApplication;
 import com.badlogic.gdx.backends.android.AndroidApplicationConfiguration;
-import me.brianweed.supergatorboi.GatorBoi;
+
+import me.brianweed.flappybirb.Flappybirb;
 
 public class AndroidLauncher extends AndroidApplication {
 	@Override
 	protected void onCreate (Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		AndroidApplicationConfiguration config = new AndroidApplicationConfiguration();
-		initialize(new GatorBoi(), config);
+		initialize(new Flappybirb(), config);
 	}
 }
